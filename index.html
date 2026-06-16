@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Cambodia Light Transport | Premium Moving & Light Freight Kilifi</title>
+  <title>Cambodia Light Transport | Professional Moving & Cargo Services Kilifi</title>
   
   <!-- Tailwind CSS & FontAwesome CDNs -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -23,7 +21,7 @@
         extend: {
           colors: {
             brandBlue: '#005b94',
-            brandDark: '#070c18',
+            brandDark: '#030712',
             brandGold: '#f5a623',
             brandGray: '#94a3b8'
           },
@@ -35,7 +33,7 @@
     }
   </script>
   <style>
-    /* Strict browser-level smooth scrolling activation */
+    /* Global smooth scrolling activation */
     html {
       scroll-behavior: smooth !important;
     }
@@ -43,7 +41,7 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
     
-    /* Advanced Glassmorphism Cards */
+    /* Transparent glass panels */
     .glass-card {
       background: rgba(255, 255, 255, 0.45);
       backdrop-filter: blur(20px) saturate(180%);
@@ -59,16 +57,15 @@
       box-shadow: 0 25px 50px -12px rgba(0, 91, 148, 0.15);
     }
 
-    /* Dark Mode Glassmorphic Elements */
+    /* Dark Mode Glassmorphism Spec Plate */
     .glass-dark {
-      background: rgba(15, 23, 42, 0.65);
+      background: rgba(15, 23, 42, 0.55);
       backdrop-filter: blur(20px) saturate(160%);
       -webkit-backdrop-filter: blur(20px) saturate(160%);
       border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     }
 
-    /* Floating illustration animation */
     @keyframes hoverFlow {
       0% { transform: translateY(0px) rotate(0deg); }
       50% { transform: translateY(-10px) rotate(1deg); }
@@ -76,25 +73,8 @@
     }
     .floating-asset { animation: hoverFlow 6s ease-in-out infinite; }
 
-    /* Custom range slider aesthetic updates */
-    input[type="range"] {
-      -webkit-appearance: none;
-      width: 100%;
-      height: 6px;
-      background: #e2e8f0;
-      border-radius: 9999px;
-      outline: none;
-    }
     input[type="range"]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #005b94;
-      border: 3px solid #ffffff;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 91, 148, 0.3);
-      transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.15s;
+      transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     input[type="range"]::-webkit-slider-thumb:hover {
       transform: scale(1.3);
@@ -104,15 +84,14 @@
 </head>
 <body class="bg-slate-50 text-slate-800 scroll-smooth antialiased overflow-x-hidden">
 
-  <!-- Floating Depth Glow Orbs (Z-0) -->
-  <div class="fixed top-[-10%] left-[-15%] w-[60vw] h-[60vw] rounded-full bg-brandBlue/5 blur-[150px] pointer-events-none z-0"></div>
-  <div class="fixed bottom-[-10%] right-[-15%] w-[60vw] h-[60vw] rounded-full bg-brandGold/5 blur-[150px] pointer-events-none z-0"></div>
+  <!-- Glowing Background Accent Orbs -->
+  <div class="fixed top-[-10%] left-[-15%] w-[60vw] h-[60vw] rounded-full bg-brandBlue/10 blur-[150px] pointer-events-none z-0"></div>
+  <div class="fixed bottom-[-10%] right-[-15%] w-[60vw] h-[60vw] rounded-full bg-brandGold/10 blur-[150px] pointer-events-none z-0"></div>
 
-  <!-- STICKY GLASS HEADER -->
+  <!-- GLASS NAVIGATION HEADER -->
   <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/40 shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
-        <!-- Brand Identity -->
         <div class="flex items-center space-x-3">
           <div class="bg-gradient-to-br from-brandBlue to-sky-700 p-2.5 rounded-2xl shadow-lg flex items-center justify-center transition-transform hover:scale-105">
             <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -128,7 +107,6 @@
           </div>
         </div>
 
-        <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
           <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Services</a>
           <a href="#fleet" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Our Fleet</a>
@@ -139,7 +117,6 @@
           </a>
         </div>
 
-        <!-- Mobile Drawer Toggle -->
         <div class="md:hidden">
           <button id="menuToggle" class="text-slate-600 focus:outline-none focus:ring-2 focus:ring-brandBlue rounded-xl p-2.5 bg-white/80 border border-white/40 shadow-sm">
             <i class="fa-solid fa-bars text-xl"></i>
@@ -167,24 +144,22 @@
 
   <!-- HERO SECTION -->
   <header class="relative overflow-hidden bg-brandDark text-white py-24 lg:py-32">
-    <!-- Sophisticated Background Grid Layout -->
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#131a2e_1px,transparent_1px),linear-gradient(to_bottom,#131a2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-    
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
         <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-brandGold/90 text-slate-950 uppercase tracking-widest shadow-sm">
-          <i class="fa-solid fa-location-dot mr-2"></i> Kilifi County Logistics Hub
+          <i class="fa-solid fa-location-dot mr-2"></i> Kilifi County, Coast Kenya
         </span>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
           Safe, Trusted & <br class="hidden lg:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-brandGold">Reliable Moving.</span>
         </h1>
         <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-          From home furniture removals to rapid merchant replenishment. We offer light logistics across Kilifi County using robust cargo loaders. Leave it to us.
+          From home furniture removals to commercial vendor replenishment. We provide light logistics using compact, heavy-duty cargo loaders. Leave it to us.
         </p>
         
         <div class="flex flex-wrap justify-center lg:justify-start gap-4 py-2">
           <span class="flex items-center text-sm font-medium text-slate-200 bg-slate-800/80 px-4 py-2.5 rounded-full border border-white/5 shadow-sm backdrop-blur-sm">
-            <i class="fa-solid fa-shield-halved text-brandGold mr-2"></i> Fast, On-Time Dispatch
+            <i class="fa-solid fa-shield-halved text-brandGold mr-2"></i> Flat Town Rates Under 5KM
           </span>
           <span class="flex items-center text-sm font-medium text-slate-200 bg-slate-800/80 px-4 py-2.5 rounded-full border border-white/5 shadow-sm backdrop-blur-sm">
             <i class="fa-solid fa-truck-ramp-box text-brandGold mr-2"></i> Light Loads, Heavy Commitment
@@ -201,11 +176,11 @@
         </div>
       </div>
 
-      <!-- Right Column: Illustrated Tricycle Canvas with Glass Card Backdrop -->
+      <!-- Right Column: Illustrated Tricycle Canvas -->
       <div class="lg:col-span-5 relative flex justify-center">
         <div class="relative w-full max-w-md">
           <div class="absolute -inset-1.5 bg-gradient-to-r from-brandBlue to-brandGold rounded-3xl blur-2xl opacity-25"></div>
-          <div class="relative bg-slate-950/60 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 shadow-2xl">
+          <div class="relative bg-slate-900/65 backdrop-blur-2xl border border-slate-800 rounded-3xl p-8 shadow-2xl">
             <div class="flex justify-center mb-6">
               <svg class="w-64 h-64 text-sky-400 floating-asset" viewBox="0 0 120 100" fill="none">
                 <rect x="35" y="70" width="50" height="6" rx="2" fill="#64748b"/>
@@ -223,9 +198,9 @@
               </svg>
             </div>
             <div class="text-center">
-              <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold bg-slate-900 border border-slate-700 text-brandGold mb-2">SPECS STATUS</span>
+              <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold bg-slate-800 border border-slate-700 text-brandGold mb-2">FLEET STATUS</span>
               <h3 class="text-xl font-bold text-white">CHAMPION CH300-C Cargo Loader</h3>
-              <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">Equipped with standard high-wall logistics boxes built to safely transport home furniture, retail materials, and heavy crates.</p>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed">Our robust fleet can handle significant weights over challenging pathways and unpaved coastal roads.</p>
             </div>
           </div>
         </div>
@@ -233,7 +208,7 @@
     </div>
   </header>
 
-  <!-- TRUST STRIP -->
+  <!-- LOGO STRIP -->
   <section class="bg-brandGold py-6 shadow-inner relative z-10">
     <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-around items-center gap-6 text-slate-950 font-extrabold text-xs sm:text-sm tracking-widest uppercase">
       <span class="flex items-center"><i class="fa-solid fa-boxes-packing mr-2 text-lg"></i> Careful Loading Guard</span>
@@ -244,25 +219,25 @@
     </div>
   </section>
 
-  <!-- SERVICES SECTION (Premium Frosted glass-card architecture) -->
+  <!-- SERVICES SECTION (With Glassmorphism Cards) -->
   <section id="services" class="py-24 lg:py-32 bg-slate-100/30 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-20">
         <span class="text-xs font-bold text-brandBlue uppercase tracking-widest">WHAT WE DO</span>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-2">Moving Your Goods, Moving Your Business</h2>
         <div class="h-1.5 w-24 bg-brandBlue mx-auto mt-4 rounded-full"></div>
-        <p class="text-slate-600 mt-5 text-lg leading-relaxed font-light">We offer robust, carefully coordinated logistics and relocation services tailored to standard commercial requirements.</p>
+        <p class="text-slate-600 mt-5 text-lg leading-relaxed font-light">We provide robust packing support and light freight logistics designed to reduce moving stress.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <div class="glass-card p-10 rounded-3xl flex flex-col justify-between">
+        <div class="glass-card p-10 rounded-3xl shadow-sm flex flex-col justify-between">
           <div>
-            <div class="w-16 h-16 bg-blue-100 text-brandBlue rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all shadow-inner">
+            <div class="w-16 h-16 bg-blue-100 text-brandBlue rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all">
               <i class="fa-solid fa-couch"></i>
             </div>
             <h3 class="text-2xl font-bold text-slate-900 mb-4">Residential Removals</h3>
-            <p class="text-slate-600 text-sm leading-relaxed font-light">
+            <p class="text-slate-600 text-sm leading-relaxed">
               Moving your appliances, beds, wardrobes, and kitchenware? We organize, wrap, load, and deliver cleanly to your next apartment.
             </p>
           </div>
@@ -273,14 +248,14 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="glass-card p-10 rounded-3xl flex flex-col justify-between">
+        <div class="glass-card p-10 rounded-3xl shadow-sm flex flex-col justify-between">
           <div>
-            <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all shadow-inner">
+            <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all">
               <i class="fa-solid fa-shop"></i>
             </div>
             <h3 class="text-2xl font-bold text-slate-900 mb-4">Commercial Replenishment</h3>
-            <p class="text-slate-600 text-sm leading-relaxed font-light">
-              Wholesale trade distribution, agricultural bags, store inventory, and retail materials. Safe and organized transit tailored to match store schedules.
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Wholesale distribution, agricultural produce, supply crates, and merchant store restocking. Fast dispatch to match your business schedules.
             </p>
           </div>
           <div class="pt-6 mt-8 border-t border-slate-200/40 text-xs font-bold text-brandBlue flex justify-between items-center">
@@ -290,13 +265,13 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="glass-card p-10 rounded-3xl flex flex-col justify-between">
+        <div class="glass-card p-10 rounded-3xl shadow-sm flex flex-col justify-between">
           <div>
-            <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all shadow-inner">
+            <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all">
               <i class="fa-solid fa-cubes"></i>
             </div>
             <h3 class="text-2xl font-bold text-slate-900 mb-4">Heavy & Bulky Cargo</h3>
-            <p class="text-slate-600 text-sm leading-relaxed font-light">
+            <p class="text-slate-600 text-sm leading-relaxed">
               Perfect alternative to costly flatbed trucks when you just have a few heavy cabinets or material crates that can't fit on standard motorbikes.
             </p>
           </div>
@@ -388,7 +363,7 @@
       <div class="glass-card rounded-3xl shadow-2xl overflow-hidden p-1">
         <div class="bg-gradient-to-br from-brandBlue to-sky-850 p-8 sm:p-10 rounded-2xl text-white text-center relative shadow-inner">
           <div class="absolute top-4 right-4 bg-brandGold text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full">
-            UPDATED FARE SCALE
+            TOWN FLAT RATE APPLIED
           </div>
           <h3 class="text-2xl sm:text-3xl font-extrabold">Interactive Fare Estimator</h3>
           <p class="text-slate-100 text-xs mt-2">Get an instant estimate for your transport requirements in Kilifi County</p>
@@ -417,19 +392,19 @@
             <div class="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Quick Kilifi Route Presets:</div>
             <div class="flex flex-wrap gap-2">
               <button onclick="setDistance(3)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Mnarani (~3km)</button>
-              <button onclick="setDistance(7)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Bofa Beach (~7km)</button>
+              <button onclick="setDistance(5)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Bofa Beach (~5km)</button>
               <button onclick="setDistance(12)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Tezo (~12km)</button>
               <button onclick="setDistance(20)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Matsangoni (~20km)</button>
               <button onclick="setDistance(48)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Malindi (~48km)</button>
             </div>
           </div>
 
-          <!-- Total display with dynamic KES 2,500 base defaults -->
+          <!-- Total display with dynamic KES 1,000 base defaults (5 km flat rate in town) -->
           <div class="bg-brandDark/95 backdrop-blur-xl text-white rounded-3xl p-8 text-center border border-white/10 relative overflow-hidden shadow-lg">
             <div class="absolute -top-12 -left-12 w-24 h-24 bg-brandBlue/10 rounded-full blur-xl"></div>
             <span class="text-slate-400 text-xs uppercase font-bold block tracking-widest mb-2">Estimated Cargo Fare</span>
-            <div id="priceOutput" class="text-4xl sm:text-5xl font-extrabold text-brandGold tracking-tight">KES 2,500</div>
-            <p class="text-[10px] text-slate-400 mt-3 font-medium">Calculated at a standard rate of <span class="text-brandGold font-bold">300 KES per kilometer</span>. Rates include standard handling help.</p>
+            <div id="priceOutput" class="text-4xl sm:text-5xl font-extrabold text-brandGold tracking-tight">KES 1,000</div>
+            <p class="text-[10px] text-slate-400 mt-3 font-medium">Flat town rate applies for the first 5 km. For journeys exceeding 5 km, a reasonable rate of <span class="text-brandGold font-bold">150 KES per additional kilometer</span> is added.</p>
           </div>
 
           <!-- Call to actions -->
@@ -629,15 +604,20 @@
       });
     }
 
-    // 300 KES/KM Calculation logic
-    const RATE_PER_KM = 300;
+    // Mid-range extra distance charge per user specification
+    const ADDITIONAL_RATE_PER_KM = 150;
 
     function calculateFare() {
       const baseValue = parseInt(cargoSelect.value, 10);
       const distanceValue = parseInt(distanceSlider.value, 10);
       distanceDisplay.textContent = `${distanceValue} km`;
 
-      const totalFare = baseValue + (distanceValue * RATE_PER_KM);
+      // 5 KM flat town rate logic applied
+      let totalFare = baseValue;
+      if (distanceValue > 5) {
+        totalFare += (distanceValue - 5) * ADDITIONAL_RATE_PER_KM;
+      }
+      
       priceOutput.textContent = `KES ${totalFare.toLocaleString()}`;
 
       const selectedCargoName = cargoSelect.options[cargoSelect.selectedIndex].text.split(' — ')[0];
@@ -653,7 +633,7 @@ Please confirm dispatch availability.`;
       whatsappQuoteBtn.href = `https://wa.me/254759280863?text=${encodeURIComponent(templateMsg)}`;
     }
 
-    // Dynamic presets update
+    // Presets setting trigger
     window.setDistance = function(km) {
       distanceSlider.value = km;
       calculateFare();
