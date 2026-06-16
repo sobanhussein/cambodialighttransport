@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Cambodia Light Transport | Professional Moving & Cargo Services Kilifi</title>
+  <title>Cambodia Light Transport | Premium Moving & Light Freight Kilifi</title>
   
   <!-- Tailwind CSS & FontAwesome CDNs -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,7 +23,7 @@
         extend: {
           colors: {
             brandBlue: '#005b94',
-            brandDark: '#030712',
+            brandDark: '#070c18',
             brandGold: '#f5a623',
             brandGray: '#94a3b8'
           },
@@ -33,7 +35,7 @@
     }
   </script>
   <style>
-    /* Global smooth scrolling activation */
+    /* Strict browser-level smooth scrolling activation */
     html {
       scroll-behavior: smooth !important;
     }
@@ -41,38 +43,58 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
     
-    /* Transparent glass panels */
+    /* Advanced Glassmorphism Cards */
     .glass-card {
       background: rgba(255, 255, 255, 0.45);
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease, background-color 0.4s;
     }
     .glass-card:hover {
-      transform: translateY(-6px);
-      background: rgba(255, 255, 255, 0.55);
-      border-color: rgba(0, 91, 148, 0.3);
-      box-shadow: 0 20px 40px rgba(0, 91, 148, 0.12);
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.6);
+      border-color: rgba(0, 91, 148, 0.25);
+      box-shadow: 0 25px 50px -12px rgba(0, 91, 148, 0.15);
     }
 
-    /* Dark Mode Glassmorphism Spec Plate */
+    /* Dark Mode Glassmorphic Elements */
     .glass-dark {
-      background: rgba(15, 23, 42, 0.55);
-      backdrop-filter: blur(16px) saturate(160%);
-      -webkit-backdrop-filter: blur(16px) saturate(160%);
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
       border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     }
 
+    /* Floating illustration animation */
     @keyframes hoverFlow {
       0% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-8px) rotate(1deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
       100% { transform: translateY(0px) rotate(0deg); }
     }
     .floating-asset { animation: hoverFlow 6s ease-in-out infinite; }
 
+    /* Custom range slider aesthetic updates */
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      background: #e2e8f0;
+      border-radius: 9999px;
+      outline: none;
+    }
     input[type="range"]::-webkit-slider-thumb {
-      transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #005b94;
+      border: 3px solid #ffffff;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 91, 148, 0.3);
+      transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.15s;
     }
     input[type="range"]::-webkit-slider-thumb:hover {
       transform: scale(1.3);
@@ -82,14 +104,15 @@
 </head>
 <body class="bg-slate-50 text-slate-800 scroll-smooth antialiased overflow-x-hidden">
 
-  <!-- Glowing Background Accent Orbs -->
-  <div class="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-brandBlue/10 blur-[130px] pointer-events-none z-0"></div>
-  <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-brandGold/10 blur-[130px] pointer-events-none z-0"></div>
+  <!-- Floating Depth Glow Orbs (Z-0) -->
+  <div class="fixed top-[-10%] left-[-15%] w-[60vw] h-[60vw] rounded-full bg-brandBlue/5 blur-[150px] pointer-events-none z-0"></div>
+  <div class="fixed bottom-[-10%] right-[-15%] w-[60vw] h-[60vw] rounded-full bg-brandGold/5 blur-[150px] pointer-events-none z-0"></div>
 
-  <!-- NAVIGATION HEADER -->
-  <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/30 shadow-sm">
+  <!-- STICKY GLASS HEADER -->
+  <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/40 shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
+        <!-- Brand Identity -->
         <div class="flex items-center space-x-3">
           <div class="bg-gradient-to-br from-brandBlue to-sky-700 p-2.5 rounded-2xl shadow-lg flex items-center justify-center transition-transform hover:scale-105">
             <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -105,18 +128,20 @@
           </div>
         </div>
 
+        <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Our Services</a>
+          <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Services</a>
           <a href="#fleet" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Our Fleet</a>
           <a href="#estimator" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Fare Calculator</a>
-          <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Bookings</a>
-          <a href="tel:+254759280863" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-xl text-white bg-brandBlue hover:bg-sky-800 shadow-md transition-all">
+          <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brandBlue transition-colors">Inquiries</a>
+          <a href="tel:+254759280863" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-xl text-white bg-brandBlue hover:bg-sky-800 shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
             <i class="fa-solid fa-phone mr-2"></i> +254 759 280 863
           </a>
         </div>
 
+        <!-- Mobile Drawer Toggle -->
         <div class="md:hidden">
-          <button id="menuToggle" class="text-slate-600 focus:outline-none focus:ring-2 focus:ring-brandBlue rounded-xl p-2 bg-white/80 border border-white/20">
+          <button id="menuToggle" class="text-slate-600 focus:outline-none focus:ring-2 focus:ring-brandBlue rounded-xl p-2.5 bg-white/80 border border-white/40 shadow-sm">
             <i class="fa-solid fa-bars text-xl"></i>
           </button>
         </div>
@@ -124,11 +149,11 @@
     </div>
 
     <!-- Mobile Drawer Panel -->
-    <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
-      <a href="#services" class="block px-3 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50/50">Our Services</a>
-      <a href="#fleet" class="block px-3 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50/50">Our Fleet</a>
-      <a href="#estimator" class="block px-3 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50/50">Fare Calculator</a>
-      <a href="#contact" class="block px-3 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-slate-50/50">Bookings</a>
+    <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-2xl border-t border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+      <a href="#services" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50/50 transition-colors">Services</a>
+      <a href="#fleet" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50/50 transition-colors">Our Fleet</a>
+      <a href="#estimator" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50/50 transition-colors">Fare Calculator</a>
+      <a href="#contact" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-slate-50/50 transition-colors">Inquiries</a>
       <div class="pt-3 border-t border-slate-100 flex flex-col space-y-2">
         <a href="tel:+254759280863" class="flex items-center justify-center w-full py-3.5 px-4 rounded-xl bg-brandBlue text-white font-bold shadow-md">
           <i class="fa-solid fa-phone mr-2"></i> Call to Book
@@ -142,25 +167,27 @@
 
   <!-- HERO SECTION -->
   <header class="relative overflow-hidden bg-brandDark text-white py-24 lg:py-32">
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+    <!-- Sophisticated Background Grid Layout -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#131a2e_1px,transparent_1px),linear-gradient(to_bottom,#131a2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+    
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-        <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-brandGold text-slate-950 uppercase tracking-widest shadow-sm animate-pulse">
-          <i class="fa-solid fa-location-dot mr-2"></i> Kilifi County, Coast Kenya
+        <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-brandGold/90 text-slate-950 uppercase tracking-widest shadow-sm">
+          <i class="fa-solid fa-location-dot mr-2"></i> Kilifi County Logistics Hub
         </span>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
-          Need a Hand <br class="hidden sm:inline">Moving Your Stuff?
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+          Safe, Trusted & <br class="hidden lg:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-brandGold">Reliable Moving.</span>
         </h1>
         <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-          From home furniture removals to commercial vendor replenishment. We provide light logistics using compact, heavy-duty cargo loaders. Leave it to us.
+          From home furniture removals to rapid merchant replenishment. We offer light logistics across Kilifi County using robust cargo loaders. Leave it to us.
         </p>
         
         <div class="flex flex-wrap justify-center lg:justify-start gap-4 py-2">
-          <span class="flex items-center text-sm font-medium text-slate-200 bg-slate-800/80 px-4 py-2.5 rounded-full border border-slate-700/60 shadow-sm">
-            <i class="fa-solid fa-shield-halved text-brandGold mr-2"></i> Safe, Trusted & Reliable
+          <span class="flex items-center text-sm font-medium text-slate-200 bg-slate-800/80 px-4 py-2.5 rounded-full border border-white/5 shadow-sm backdrop-blur-sm">
+            <i class="fa-solid fa-shield-halved text-brandGold mr-2"></i> Fast, On-Time Dispatch
           </span>
-          <span class="flex items-center text-sm font-medium text-slate-200 bg-slate-800/80 px-4 py-2.5 rounded-full border border-slate-700/60 shadow-sm">
-            <i class="fa-solid fa-truck-ramp-box text-brandGold mr-2"></i> Heavy Commitment
+          <span class="flex items-center text-sm font-medium text-slate-200 bg-slate-800/80 px-4 py-2.5 rounded-full border border-white/5 shadow-sm backdrop-blur-sm">
+            <i class="fa-solid fa-truck-ramp-box text-brandGold mr-2"></i> Light Loads, Heavy Commitment
           </span>
         </div>
 
@@ -174,11 +201,11 @@
         </div>
       </div>
 
-      <!-- Right Column: Illustrated Tricycle Canvas -->
+      <!-- Right Column: Illustrated Tricycle Canvas with Glass Card Backdrop -->
       <div class="lg:col-span-5 relative flex justify-center">
         <div class="relative w-full max-w-md">
           <div class="absolute -inset-1.5 bg-gradient-to-r from-brandBlue to-brandGold rounded-3xl blur-2xl opacity-25"></div>
-          <div class="relative bg-slate-900/65 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl">
+          <div class="relative bg-slate-950/60 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 shadow-2xl">
             <div class="flex justify-center mb-6">
               <svg class="w-64 h-64 text-sky-400 floating-asset" viewBox="0 0 120 100" fill="none">
                 <rect x="35" y="70" width="50" height="6" rx="2" fill="#64748b"/>
@@ -196,9 +223,9 @@
               </svg>
             </div>
             <div class="text-center">
-              <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold bg-slate-800 border border-slate-700 text-brandGold mb-2">FLEET STATUS</span>
+              <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold bg-slate-900 border border-slate-700 text-brandGold mb-2">SPECS STATUS</span>
               <h3 class="text-xl font-bold text-white">CHAMPION CH300-C Cargo Loader</h3>
-              <p class="text-xs text-slate-400 mt-2 leading-relaxed">Our robust fleet can handle significant weights over challenging pathways and unpaved coastal roads.</p>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">Equipped with standard high-wall logistics boxes built to safely transport home furniture, retail materials, and heavy crates.</p>
             </div>
           </div>
         </div>
@@ -206,7 +233,7 @@
     </div>
   </header>
 
-  <!-- LOGO STRIP -->
+  <!-- TRUST STRIP -->
   <section class="bg-brandGold py-6 shadow-inner relative z-10">
     <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-around items-center gap-6 text-slate-950 font-extrabold text-xs sm:text-sm tracking-widest uppercase">
       <span class="flex items-center"><i class="fa-solid fa-boxes-packing mr-2 text-lg"></i> Careful Loading Guard</span>
@@ -217,25 +244,25 @@
     </div>
   </section>
 
-  <!-- SERVICES SECTION (With Glassmorphism Cards) -->
+  <!-- SERVICES SECTION (Premium Frosted glass-card architecture) -->
   <section id="services" class="py-24 lg:py-32 bg-slate-100/30 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-20">
         <span class="text-xs font-bold text-brandBlue uppercase tracking-widest">WHAT WE DO</span>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-2">Moving Your Goods, Moving Your Business</h2>
         <div class="h-1.5 w-24 bg-brandBlue mx-auto mt-4 rounded-full"></div>
-        <p class="text-slate-600 mt-5 text-lg leading-relaxed font-light">We provide robust packing support and light freight logistics designed to reduce moving stress.</p>
+        <p class="text-slate-600 mt-5 text-lg leading-relaxed font-light">We offer robust, carefully coordinated logistics and relocation services tailored to standard commercial requirements.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <div class="glass-card p-10 rounded-3xl shadow-sm flex flex-col justify-between">
+        <div class="glass-card p-10 rounded-3xl flex flex-col justify-between">
           <div>
-            <div class="w-16 h-16 bg-blue-100 text-brandBlue rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all">
+            <div class="w-16 h-16 bg-blue-100 text-brandBlue rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all shadow-inner">
               <i class="fa-solid fa-couch"></i>
             </div>
             <h3 class="text-2xl font-bold text-slate-900 mb-4">Residential Removals</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed font-light">
               Moving your appliances, beds, wardrobes, and kitchenware? We organize, wrap, load, and deliver cleanly to your next apartment.
             </p>
           </div>
@@ -246,13 +273,13 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="glass-card p-10 rounded-3xl shadow-sm flex flex-col justify-between">
+        <div class="glass-card p-10 rounded-3xl flex flex-col justify-between">
           <div>
-            <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all">
+            <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all shadow-inner">
               <i class="fa-solid fa-shop"></i>
             </div>
             <h3 class="text-2xl font-bold text-slate-900 mb-4">Commercial Replenishment</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed font-light">
               Wholesale trade distribution, agricultural bags, store inventory, and retail materials. Safe and organized transit tailored to match store schedules.
             </p>
           </div>
@@ -263,13 +290,13 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="glass-card p-10 rounded-3xl shadow-sm flex flex-col justify-between">
+        <div class="glass-card p-10 rounded-3xl flex flex-col justify-between">
           <div>
-            <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all">
+            <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-3xl font-bold mb-8 transition-all shadow-inner">
               <i class="fa-solid fa-cubes"></i>
             </div>
             <h3 class="text-2xl font-bold text-slate-900 mb-4">Heavy & Bulky Cargo</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed font-light">
               Perfect alternative to costly flatbed trucks when you just have a few heavy cabinets or material crates that can't fit on standard motorbikes.
             </p>
           </div>
@@ -291,7 +318,7 @@
         <div class="space-y-6">
           <span class="text-brandGold font-bold uppercase tracking-widest text-xs block">OUR VEHICLE CAPABILITIES</span>
           <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Light Loads, Heavy Commitment.</h2>
-          <p class="text-slate-400 leading-relaxed text-sm">
+          <p class="text-slate-400 leading-relaxed text-sm font-light">
             We operate highly versatile three-wheel loaders (utility tuk-tuks) similar to high-capacity commercial trikes. These vehicles navigate where standard trucks cannot, saving fuel and transport costs while safely handling cargo of up to 1 ton.
           </p>
           
@@ -333,7 +360,7 @@
             METRICS
           </div>
           <h3 class="text-xl font-bold border-b border-white/10 pb-4 text-brandGold"><i class="fa-solid fa-circle-info mr-2"></i> Operational Performance</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
             All freight items are secured inside our loader boxes using elastic straps, avoiding shifting or transit impact damage.
           </p>
           <div class="grid grid-cols-3 gap-4 text-center">
@@ -355,11 +382,11 @@
     </div>
   </section>
 
-  <!-- INTERACTIVE FARE ESTIMATOR WITH GLASSMORPHISM PANEL -->
+  <!-- INTERACTIVE FARE ESTIMATOR WITH GLASSMORPHISM PANEL & PRESETS -->
   <section id="estimator" class="py-24 lg:py-32 bg-slate-100/30 relative">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="glass-card rounded-3xl shadow-2xl overflow-hidden p-1">
-        <div class="bg-gradient-to-br from-brandBlue to-sky-850 p-8 rounded-2xl text-white text-center relative shadow-inner">
+        <div class="bg-gradient-to-br from-brandBlue to-sky-850 p-8 sm:p-10 rounded-2xl text-white text-center relative shadow-inner">
           <div class="absolute top-4 right-4 bg-brandGold text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full">
             UPDATED FARE SCALE
           </div>
@@ -371,7 +398,7 @@
           <!-- Load dropdown with updated specified base rates -->
           <div>
             <label class="block text-xs font-bold text-slate-700 uppercase tracking-widest mb-3">1. Select Cargo Load Category</label>
-            <select id="cargoSelect" class="w-full bg-white/70 backdrop-blur-md border border-slate-200/80 rounded-2xl px-5 py-4 text-sm focus:ring-2 focus:ring-brandBlue outline-none transition-all font-medium text-slate-700">
+            <select id="cargoSelect" class="w-full bg-white/70 backdrop-blur-md border border-slate-200/80 rounded-2xl px-5 py-4 text-sm focus:ring-2 focus:ring-brandBlue outline-none transition-all font-semibold text-slate-700">
               <option value="300">Minimal Parcels / Small Box Delivery — Base: 300 KES</option>
               <option value="1000" selected>Medium Load (Table, Chairs, Bedframe, Cabinets) — Base: 1,000 KES</option>
               <option value="2500">Heavy Full Load (CH300-C Full Cargo Loader Capacity) — Base: 2,500 KES</option>
@@ -384,11 +411,16 @@
               <label class="block text-xs font-bold text-slate-700 uppercase tracking-widest">2. Approximate Distance (km)</label>
               <span id="distanceDisplay" class="text-sm font-bold text-brandBlue bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full border border-brandBlue/20 shadow-sm">5 km</span>
             </div>
-            <input type="range" id="distanceSlider" min="1" max="50" value="5" class="cursor-pointer" />
-            <div class="flex justify-between text-[10px] text-slate-400 mt-2 font-bold tracking-wider">
-              <span>1 KM</span>
-              <span>25 KM</span>
-              <span>50 KM</span>
+            <input type="range" id="distanceSlider" min="1" max="50" value="5" class="cursor-pointer mb-4" />
+            
+            <!-- Localized Quick Route Presets -->
+            <div class="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Quick Kilifi Route Presets:</div>
+            <div class="flex flex-wrap gap-2">
+              <button onclick="setDistance(3)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Mnarani (~3km)</button>
+              <button onclick="setDistance(7)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Bofa Beach (~7km)</button>
+              <button onclick="setDistance(12)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Tezo (~12km)</button>
+              <button onclick="setDistance(20)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Matsangoni (~20km)</button>
+              <button onclick="setDistance(48)" class="text-xs bg-white hover:bg-brandBlue hover:text-white text-slate-700 border border-slate-200 px-3 py-1.5 rounded-xl transition-all shadow-sm font-medium">Malindi (~48km)</button>
             </div>
           </div>
 
@@ -408,6 +440,43 @@
             <a href="tel:+254759280863" class="flex items-center justify-center py-4 px-6 rounded-2xl bg-brandDark hover:bg-slate-800 text-white font-bold shadow-lg transition-all border border-slate-700 text-sm uppercase tracking-wider">
               <i class="fa-solid fa-phone mr-2.5"></i> Call to Confirm Booking
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="py-24 bg-slate-50 relative border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brandBlue uppercase tracking-widest">TESTIMONIALS</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Trusted by Local Businesses</h2>
+        <div class="h-1.5 w-16 bg-brandBlue mx-auto mt-3 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-card p-8 rounded-3xl relative">
+          <div class="text-brandGold mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="text-slate-600 text-sm italic font-light mb-6">"Cambodia Light Transport has transformed how we distribute furniture pieces in Kilifi. Their Champion cargo loaders are incredibly robust, reliable, and significantly cheaper than standard flatbed options."</p>
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-brandBlue/10 rounded-full flex items-center justify-center font-bold text-brandBlue">K</div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-950">Kilifi Furniture Mart</h4>
+              <p class="text-[10px] text-slate-400">Verified Local Merchant</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl relative">
+          <div class="text-brandGold mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="text-slate-600 text-sm italic font-light mb-6 font-light">"Extremely responsive and professional. They helped move several sets of delicate outdoor lounge chairs to Bofa Beach with proper strap-downs and canvas protection. Not a single scratch on arrival."</p>
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-brandBlue/10 rounded-full flex items-center justify-center font-bold text-brandBlue">B</div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-950">Bofa Holiday Homes</h4>
+              <p class="text-[10px] text-slate-400">Property Manager</p>
+            </div>
           </div>
         </div>
       </div>
@@ -504,7 +573,7 @@
             <span class="text-[10px] font-semibold tracking-wider text-brandBlue block uppercase">Light Transport</span>
           </div>
         </div>
-        <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+        <p class="text-slate-400 text-xs leading-relaxed max-w-sm font-light">
           Providing high-performance light cargo transport, furniture delivery, and home relocation operations across Kilifi County and surrounding regions.
         </p>
         <div class="text-xs font-bold text-brandGold italic">"Light Loads, Heavy Commitment."</div>
@@ -582,6 +651,12 @@ Details:
 Please confirm dispatch availability.`;
 
       whatsappQuoteBtn.href = `https://wa.me/254759280863?text=${encodeURIComponent(templateMsg)}`;
+    }
+
+    // Dynamic presets update
+    window.setDistance = function(km) {
+      distanceSlider.value = km;
+      calculateFare();
     }
 
     if (cargoSelect && distanceSlider) {
